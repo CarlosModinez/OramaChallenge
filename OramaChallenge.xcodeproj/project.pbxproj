@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63E5A6412717A52F00FBB90D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A6402717A52F00FBB90D /* AppDelegate.swift */; };
+		63E5A6432717A52F00FBB90D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A6422717A52F00FBB90D /* SceneDelegate.swift */; };
+		63E5A6452717A52F00FBB90D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A6442717A52F00FBB90D /* ViewController.swift */; };
+		63E5A6482717A52F00FBB90D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E5A6462717A52F00FBB90D /* Main.storyboard */; };
+		63E5A64B2717A52F00FBB90D /* OramaChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A6492717A52F00FBB90D /* OramaChallenge.xcdatamodeld */; };
+		63E5A64D2717A53000FBB90D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E5A64C2717A53000FBB90D /* Assets.xcassets */; };
+		63E5A6502717A53000FBB90D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E5A64E2717A53000FBB90D /* LaunchScreen.storyboard */; };
+		63E5A65B2717A53000FBB90D /* OramaChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A65A2717A53000FBB90D /* OramaChallengeTests.swift */; };
+		63E5A6662717A53000FBB90D /* OramaChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A6652717A53000FBB90D /* OramaChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63E5A6572717A53000FBB90D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63E5A6352717A52F00FBB90D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63E5A63C2717A52F00FBB90D;
+			remoteInfo = OramaChallenge;
+		};
+		63E5A6622717A53000FBB90D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63E5A6352717A52F00FBB90D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63E5A63C2717A52F00FBB90D;
+			remoteInfo = OramaChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63E5A63D2717A52F00FBB90D /* OramaChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OramaChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E5A6402717A52F00FBB90D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63E5A6422717A52F00FBB90D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		63E5A6442717A52F00FBB90D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63E5A6472717A52F00FBB90D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63E5A64A2717A52F00FBB90D /* OramaChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OramaChallenge.xcdatamodel; sourceTree = "<group>"; };
+		63E5A64C2717A53000FBB90D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63E5A64F2717A53000FBB90D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63E5A6512717A53000FBB90D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E5A6562717A53000FBB90D /* OramaChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OramaChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E5A65A2717A53000FBB90D /* OramaChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OramaChallengeTests.swift; sourceTree = "<group>"; };
+		63E5A65C2717A53000FBB90D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63E5A6612717A53000FBB90D /* OramaChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OramaChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E5A6652717A53000FBB90D /* OramaChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OramaChallengeUITests.swift; sourceTree = "<group>"; };
+		63E5A6672717A53000FBB90D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63E5A63A2717A52F00FBB90D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E5A6532717A53000FBB90D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E5A65E2717A53000FBB90D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63E5A6342717A52F00FBB90D = {
+			isa = PBXGroup;
+			children = (
+				63E5A63F2717A52F00FBB90D /* OramaChallenge */,
+				63E5A6592717A53000FBB90D /* OramaChallengeTests */,
+				63E5A6642717A53000FBB90D /* OramaChallengeUITests */,
+				63E5A63E2717A52F00FBB90D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63E5A63E2717A52F00FBB90D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63E5A63D2717A52F00FBB90D /* OramaChallenge.app */,
+				63E5A6562717A53000FBB90D /* OramaChallengeTests.xctest */,
+				63E5A6612717A53000FBB90D /* OramaChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63E5A63F2717A52F00FBB90D /* OramaChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				63E5A6402717A52F00FBB90D /* AppDelegate.swift */,
+				63E5A6422717A52F00FBB90D /* SceneDelegate.swift */,
+				63E5A6442717A52F00FBB90D /* ViewController.swift */,
+				63E5A6462717A52F00FBB90D /* Main.storyboard */,
+				63E5A64C2717A53000FBB90D /* Assets.xcassets */,
+				63E5A64E2717A53000FBB90D /* LaunchScreen.storyboard */,
+				63E5A6512717A53000FBB90D /* Info.plist */,
+				63E5A6492717A52F00FBB90D /* OramaChallenge.xcdatamodeld */,
+			);
+			path = OramaChallenge;
+			sourceTree = "<group>";
+		};
+		63E5A6592717A53000FBB90D /* OramaChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				63E5A65A2717A53000FBB90D /* OramaChallengeTests.swift */,
+				63E5A65C2717A53000FBB90D /* Info.plist */,
+			);
+			path = OramaChallengeTests;
+			sourceTree = "<group>";
+		};
+		63E5A6642717A53000FBB90D /* OramaChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				63E5A6652717A53000FBB90D /* OramaChallengeUITests.swift */,
+				63E5A6672717A53000FBB90D /* Info.plist */,
+			);
+			path = OramaChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63E5A63C2717A52F00FBB90D /* OramaChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E5A66A2717A53000FBB90D /* Build configuration list for PBXNativeTarget "OramaChallenge" */;
+			buildPhases = (
+				63E5A6392717A52F00FBB90D /* Sources */,
+				63E5A63A2717A52F00FBB90D /* Frameworks */,
+				63E5A63B2717A52F00FBB90D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OramaChallenge;
+			productName = OramaChallenge;
+			productReference = 63E5A63D2717A52F00FBB90D /* OramaChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63E5A6552717A53000FBB90D /* OramaChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E5A66D2717A53000FBB90D /* Build configuration list for PBXNativeTarget "OramaChallengeTests" */;
+			buildPhases = (
+				63E5A6522717A53000FBB90D /* Sources */,
+				63E5A6532717A53000FBB90D /* Frameworks */,
+				63E5A6542717A53000FBB90D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63E5A6582717A53000FBB90D /* PBXTargetDependency */,
+			);
+			name = OramaChallengeTests;
+			productName = OramaChallengeTests;
+			productReference = 63E5A6562717A53000FBB90D /* OramaChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63E5A6602717A53000FBB90D /* OramaChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E5A6702717A53000FBB90D /* Build configuration list for PBXNativeTarget "OramaChallengeUITests" */;
+			buildPhases = (
+				63E5A65D2717A53000FBB90D /* Sources */,
+				63E5A65E2717A53000FBB90D /* Frameworks */,
+				63E5A65F2717A53000FBB90D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63E5A6632717A53000FBB90D /* PBXTargetDependency */,
+			);
+			name = OramaChallengeUITests;
+			productName = OramaChallengeUITests;
+			productReference = 63E5A6612717A53000FBB90D /* OramaChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63E5A6352717A52F00FBB90D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					63E5A63C2717A52F00FBB90D = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					63E5A6552717A53000FBB90D = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 63E5A63C2717A52F00FBB90D;
+					};
+					63E5A6602717A53000FBB90D = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 63E5A63C2717A52F00FBB90D;
+					};
+				};
+			};
+			buildConfigurationList = 63E5A6382717A52F00FBB90D /* Build configuration list for PBXProject "OramaChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63E5A6342717A52F00FBB90D;
+			productRefGroup = 63E5A63E2717A52F00FBB90D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63E5A63C2717A52F00FBB90D /* OramaChallenge */,
+				63E5A6552717A53000FBB90D /* OramaChallengeTests */,
+				63E5A6602717A53000FBB90D /* OramaChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63E5A63B2717A52F00FBB90D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E5A6502717A53000FBB90D /* LaunchScreen.storyboard in Resources */,
+				63E5A64D2717A53000FBB90D /* Assets.xcassets in Resources */,
+				63E5A6482717A52F00FBB90D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E5A6542717A53000FBB90D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E5A65F2717A53000FBB90D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63E5A6392717A52F00FBB90D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E5A6452717A52F00FBB90D /* ViewController.swift in Sources */,
+				63E5A6412717A52F00FBB90D /* AppDelegate.swift in Sources */,
+				63E5A64B2717A52F00FBB90D /* OramaChallenge.xcdatamodeld in Sources */,
+				63E5A6432717A52F00FBB90D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E5A6522717A53000FBB90D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E5A65B2717A53000FBB90D /* OramaChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E5A65D2717A53000FBB90D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E5A6662717A53000FBB90D /* OramaChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63E5A6582717A53000FBB90D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63E5A63C2717A52F00FBB90D /* OramaChallenge */;
+			targetProxy = 63E5A6572717A53000FBB90D /* PBXContainerItemProxy */;
+		};
+		63E5A6632717A53000FBB90D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63E5A63C2717A52F00FBB90D /* OramaChallenge */;
+			targetProxy = 63E5A6622717A53000FBB90D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63E5A6462717A52F00FBB90D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E5A6472717A52F00FBB90D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63E5A64E2717A53000FBB90D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E5A64F2717A53000FBB90D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63E5A6682717A53000FBB90D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63E5A6692717A53000FBB90D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63E5A66B2717A53000FBB90D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4AUTGNZMRU;
+				INFOPLIST_FILE = OramaChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.modine.carlos.OramaChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63E5A66C2717A53000FBB90D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4AUTGNZMRU;
+				INFOPLIST_FILE = OramaChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.modine.carlos.OramaChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63E5A66E2717A53000FBB90D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4AUTGNZMRU;
+				INFOPLIST_FILE = OramaChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.modine.carlos.OramaChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OramaChallenge.app/OramaChallenge";
+			};
+			name = Debug;
+		};
+		63E5A66F2717A53000FBB90D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4AUTGNZMRU;
+				INFOPLIST_FILE = OramaChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.modine.carlos.OramaChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OramaChallenge.app/OramaChallenge";
+			};
+			name = Release;
+		};
+		63E5A6712717A53000FBB90D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4AUTGNZMRU;
+				INFOPLIST_FILE = OramaChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.modine.carlos.OramaChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OramaChallenge;
+			};
+			name = Debug;
+		};
+		63E5A6722717A53000FBB90D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4AUTGNZMRU;
+				INFOPLIST_FILE = OramaChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.modine.carlos.OramaChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OramaChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63E5A6382717A52F00FBB90D /* Build configuration list for PBXProject "OramaChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E5A6682717A53000FBB90D /* Debug */,
+				63E5A6692717A53000FBB90D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E5A66A2717A53000FBB90D /* Build configuration list for PBXNativeTarget "OramaChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E5A66B2717A53000FBB90D /* Debug */,
+				63E5A66C2717A53000FBB90D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E5A66D2717A53000FBB90D /* Build configuration list for PBXNativeTarget "OramaChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E5A66E2717A53000FBB90D /* Debug */,
+				63E5A66F2717A53000FBB90D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E5A6702717A53000FBB90D /* Build configuration list for PBXNativeTarget "OramaChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E5A6712717A53000FBB90D /* Debug */,
+				63E5A6722717A53000FBB90D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		63E5A6492717A52F00FBB90D /* OramaChallenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				63E5A64A2717A52F00FBB90D /* OramaChallenge.xcdatamodel */,
+			);
+			currentVersion = 63E5A64A2717A52F00FBB90D /* OramaChallenge.xcdatamodel */;
+			path = OramaChallenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 63E5A6352717A52F00FBB90D /* Project object */;
+}
