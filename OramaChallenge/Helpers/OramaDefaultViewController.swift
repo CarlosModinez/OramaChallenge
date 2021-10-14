@@ -14,6 +14,7 @@ class OramaDefaultViewController: UIViewController {
 		
 		return view
 	}()
+	
 	private lazy var loadingView: UIView = {
 		let loadIndicator = UIActivityIndicatorView()
 		let loadView = UIView()
@@ -39,6 +40,11 @@ class OramaDefaultViewController: UIViewController {
 	
 	override func loadView() {
 		self.view = mainView
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		debugPrint("\(String(describing: self))")
 	}
 }
 
