@@ -72,10 +72,10 @@ extension OramaDefaultViewController {
 		DispatchQueue.main.async {
 			self.view.addSubview(self.loadingView)
 			self.loadingView.anchor(
-				centerX: (self.view.centerXAnchor, 0),
-				centerY: (self.view.centerYAnchor, 0),
-				height: 150,
-				width: 200
+				top: (self.view.topAnchor, 0),
+				right: (self.view.rightAnchor, 0),
+				left: (self.view.leftAnchor, 0),
+				bottom: (self.view.bottomAnchor, 0)
 			)
 		}
 	}
