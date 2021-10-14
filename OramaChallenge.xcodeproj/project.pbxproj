@@ -100,6 +100,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		632DAAE32718B16B002D33E9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				63D78EFB2717CAFB00819D68 /* UIView+Anchor.swift */,
+				632DAAD327189CA8002D33E9 /* UIColors+Helpers.swift */,
+				632DAAD927189F1C002D33E9 /* UIFont+Helpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		6338FE922717A74F0002F68E /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,11 +175,9 @@
 		63D78EC32717AD6C00819D68 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				632DAAE32718B16B002D33E9 /* Extensions */,
 				63D78EC42717ADA400819D68 /* OramaDefaultViewController.swift */,
-				63D78EFB2717CAFB00819D68 /* UIView+Anchor.swift */,
 				632DAACE27188D44002D33E9 /* FundRisk.swift */,
-				632DAAD327189CA8002D33E9 /* UIColors+Helpers.swift */,
-				632DAAD927189F1C002D33E9 /* UIFont+Helpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
