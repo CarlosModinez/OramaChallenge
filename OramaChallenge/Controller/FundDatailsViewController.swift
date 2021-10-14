@@ -8,6 +8,7 @@
 import UIKit
 
 class FundDatailsViewController: OramaDefaultViewController {
+	private let viewModel = InvestmentFundsViewModel()
 	private var fund: Fund!
 	private lazy var detailView: FundDatailsView = {
 		return self.view as! FundDatailsView
@@ -29,6 +30,7 @@ class FundDatailsViewController: OramaDefaultViewController {
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		setupNavigationBar()
+		loadImage()
 	}
 	
 	override func loadView() {
@@ -43,5 +45,17 @@ class FundDatailsViewController: OramaDefaultViewController {
 		backButton.title = ""
 		
 		self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+	}
+	
+	private func loadImage() {
+		viewModel.getThumbailImage(fund: fund) { [weak self] response in
+			guard let self = self else { return }
+			switch response {
+			case .success(let data):
+				guard let data = data else { return }
+				self.detailView.setImage(data: data)
+			case .failure(_): return
+			}
+		}
 	}
 }

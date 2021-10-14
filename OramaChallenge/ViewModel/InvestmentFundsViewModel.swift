@@ -14,4 +14,12 @@ class InvestmentFundsViewModel {
 			completion(response)
 		}
 	}
+	
+	func getThumbailImage(fund: Fund, completion: @escaping (Result<Data?, RequestError>) -> Void) {
+		if let thumbnailUrl = fund.strategyVideo?.thumbnail {
+			repository.getImageData(from: thumbnailUrl) { response in
+				completion(response)
+			}
+		}
+	}
 }

@@ -11,8 +11,7 @@ class FundDatailsView: UIView {
 	private var fund: Fund!
 	
 	private let contentView: UIScrollView = {
-		let view = UIScrollView()
-		return view
+		return UIScrollView()
 	}()
 	
 	private let fundNameLabel: UILabel = {
@@ -24,17 +23,16 @@ class FundDatailsView: UIView {
 	}()
 	
 	private let initialDateView: TitleAndValueView = {
-		let titleAndValue = TitleAndValueView()
-		return titleAndValue
+		return TitleAndValueView()
 	}()
 	
 	private let minimumAplicationView: TitleAndValueView = {
-		let titleAndValue = TitleAndValueView()
-		return titleAndValue
+		return TitleAndValueView()
 	}()
 	
 	private let thumnailImageView: UIImageView = {
 		let image = UIImageView()
+		image.contentMode = .scaleAspectFit
 		return image
 	}()
 	
@@ -42,6 +40,22 @@ class FundDatailsView: UIView {
 		let view = FundDescriptionWithDecorationView()
 		return view
 	}()
+	
+	public func setImage(data: Data) {
+		DispatchQueue.main.async() { [weak self] in
+			guard let self = self else { return }
+			if let image = UIImage(data: data) {
+				let imageProportion: CGFloat = image.size.width / image.size.height
+				let marginsToImage: CGFloat = 60
+				let imageWidth = UIScreen.main.bounds.width - marginsToImage
+				let imageHeight = imageWidth / imageProportion
+				
+				self.thumnailImageView.image = image
+				self.thumnailImageView.heightAnchor.constraint(equalToConstant: imageHeight).isActive = true
+				self.thumnailImageView.widthAnchor.constraint(equalToConstant: imageWidth).isActive = true
+			}
+		}
+	}
 	
 	convenience init(frame: CGRect, fund: Fund) {
 		self.init(frame: frame)
@@ -115,13 +129,13 @@ class FundDatailsView: UIView {
 		)
 		
 		thumnailImageView.anchor(
-			top: (minimumAplicationView.bottomAnchor, 25),
-			right: (rightAnchor, 20),
-			left: (leftAnchor, 20)
+			top: (minimumAplicationView.bottomAnchor, 15),
+			right: (rightAnchor, 30),
+			left: (leftAnchor, 30)
 		)
 		
 		fundDescriptionView.anchor(
-			top: (thumnailImageView.bottomAnchor, 20),
+			top: (thumnailImageView.bottomAnchor, 30),
 			right: (rightAnchor, 30),
 			left: (leftAnchor, 30),
 			bottom: (contentView.bottomAnchor, 20)

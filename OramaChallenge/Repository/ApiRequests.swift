@@ -14,7 +14,6 @@ fileprivate struct OramaRequests {
 class ApiRequest: NSObject, URLSessionDelegate, URLSessionDataDelegate {
 	
 	func getFunds(completionHandler: @escaping (Result<Funds, RequestError>) -> Void) {
-		
 		let config = URLSessionConfiguration.default
 		config.waitsForConnectivity = true
 		config.timeoutIntervalForRequest = 300
@@ -34,6 +33,21 @@ class ApiRequest: NSObject, URLSessionDelegate, URLSessionDataDelegate {
 			}
 		}.resume()
 	}
+	
+	func getImageData(from url: String, completion: @escaping (Result<Data?, RequestError>) -> Void) {
+		let config = URLSessionConfiguration.default
+		config.waitsForConnectivity = true
+		config.timeoutIntervalForRequest = 300
+		let session = URLSession(configuration: config, delegate: self, delegateQueue: nil)
+		
+		guard let url = URL(string: url) else { return completion(.failure(.invalidUrl)) }
+		
+		session.dataTask(with: url) { data, _, error in
+			if let error = error as NSError?, error.code == -999 { return completion(.failure(.noInternetConnection)) }
+			completion(.success(data))
+		}.resume()
+	}
+	
 	
 	func urlSession(_ session: URLSession, taskIsWaitingForConnectivity task: URLSessionTask) {
 		task.cancel()
