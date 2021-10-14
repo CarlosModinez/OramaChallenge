@@ -48,7 +48,7 @@ class SingleFundCollectionViewCell: UICollectionViewCell {
 		
 		self.nameLabel.text = fund.simpleName
 		if var minimumApplication = fund.operability?.minimumInitialApplicationAmount {
-			self.minimumApplication.text = "Aplicação minima: \(minimumApplication.toCurrency())"
+			self.minimumApplication.text = AppStrings.shared.minimumApplicationValueText(value: minimumApplication.toCurrency())
 		}
 		
 		self.contentView.addSubview(backView)

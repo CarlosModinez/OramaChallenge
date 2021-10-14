@@ -38,7 +38,7 @@ class FundDatailsViewController: OramaDefaultViewController {
 	}
 	
 	private func setupNavigationBar() {
-		self.navigationItem.title = "Detalhes sobre o fundo"
+		self.navigationItem.title = AppStrings.shared.detailsPageTitle
 		self.navigationController?.navigationBar.tintColor = UIColor.gray;
 		
 		let backButton = UIBarButtonItem()

@@ -52,15 +52,20 @@ class OramaDefaultViewController: UIViewController {
 // MARK: Tratamento de exceções
 extension OramaDefaultViewController {
 	func handlerError(_ error: RequestError, onTap: (() -> Void)? = nil) {
+		let title: String
 		let description: String
 		
 		switch error {
-		case .decodingError, .responseError, .invalidUrl: description = "Erro genérico"
-		case .noInternetConnection: description = "Falta de internet"
+		case .decodingError, .responseError, .invalidUrl:
+			title = AppStrings.shared.generalApiErrorTitle
+			description = AppStrings.shared.generalApiErrorDescription
+		case .noInternetConnection:
+			title = AppStrings.shared.internetConnectionFailedTitle
+			description = AppStrings.shared.internetConnectionFailedDescription
 		}
 		
 		let alertController = UIAlertController(
-			title: NSLocalizedString("Aconteceu um erro", comment:""),
+			title: NSLocalizedString(title, comment:""),
 			message: NSLocalizedString(description, comment:""),
 			preferredStyle: .alert)
 		

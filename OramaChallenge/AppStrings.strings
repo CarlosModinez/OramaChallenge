@@ -1,0 +1,24 @@
+/* 
+  Strings.strings
+  OramaChallenge
+
+  Created by Carlos Roberto Modinez Junior on 14/10/21.
+  
+*/
+
+
+"fundsPageTitle" = "Fundos disponíveis";
+"minimumApplicationValueText" = "Aplicação mínima: %@";
+"riskScaleTitle" = "Escala de risco";
+"riskScaleSmaller" = "menor";
+"riskScaleBigger" = "maior";
+
+"detailsPageTitle" = "Detalhes sobre o fundo";
+"creationDateTitle" = "Data de criação do fundo";
+"minimumValueTitle" = "Valor mínimo de aplicação";
+
+"internetConnectionFailedTitle" = "Conexão ruim";
+"internetConnectionFailedDescription" = "Parece que você está com problemas na conexão. Verique e tente novamente";
+
+"generalApiErrorTitle" = "Ops, parece que algo não está certo";
+"generalApiErrorDescription" = "Estamos com problemas no momento. Tenta de novo daqui a pouco";

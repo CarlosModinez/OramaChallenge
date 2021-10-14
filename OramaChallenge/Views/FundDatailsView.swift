@@ -83,12 +83,12 @@ class FundDatailsView: UIView {
 		}
 		
 		if var initialDate = fund.initialDate {
-			initialDateView.title.text = "Data de criação do fundo"
+			initialDateView.title.text = AppStrings.shared.creationDateTitle
 			initialDateView.value.text = initialDate.toDate()
 		}
 		
 		if var minimumValue = fund.operability?.minimumInitialApplicationAmount {
-			minimumAplicationView.title.text = "Valor mínimo de aplicação"
+			minimumAplicationView.title.text = AppStrings.shared.minimumValueTitle
 			minimumAplicationView.value.text = minimumValue.toCurrency()
 		}
 		

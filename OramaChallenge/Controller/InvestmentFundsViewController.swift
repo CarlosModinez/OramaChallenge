@@ -22,7 +22,7 @@ class InvestmentFundsViewController: OramaDefaultViewController {
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(true)
-		self.navigationItem.title = "Fundos disponíveis"
+		self.navigationItem.title = AppStrings.shared.fundsPageTitle
 	}
 	
 	override func loadView() {

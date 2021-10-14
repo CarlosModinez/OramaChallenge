@@ -11,7 +11,7 @@ class GradientOfRiskView: UIView {
 	private let viewTitleLabel: UILabel = {
 		let label = UILabel()
 		label.font = UIFont.title1()
-		label.text = "Escala de risco"
+		label.text = AppStrings.shared.riskScaleTitle
 		return label
 	}()
 	
@@ -46,14 +46,14 @@ class GradientOfRiskView: UIView {
 	private let smallerIndicatorLabel: UILabel = {
 		let label = UILabel()
 		label.font = UIFont.title2()
-		label.text = "menor"
+		label.text = AppStrings.shared.riskScaleSmaller
 		return label
 	}()
 	
 	private let biggerIndicatorLabel: UILabel = {
 		let label = UILabel()
 		label.font = UIFont.title2()
-		label.text = "maior"
+		label.text = AppStrings.shared.riskScaleBigger
 		label.textAlignment = .right
 		return label
 	}()
