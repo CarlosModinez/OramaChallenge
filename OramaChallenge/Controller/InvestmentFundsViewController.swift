@@ -30,6 +30,10 @@ class InvestmentFundsViewController: OramaDefaultViewController {
 		fundsView.collectionViewDataSource = self
 		fundsView.collectionViewDelegate = self
 	}
+	
+	private func goToFundDetails(_ fund: Fund) {
+		self.navigationController?.pushViewController(FundDatailsViewController(fundToShow: fund), animated: true)
+	}
 }
 
 extension InvestmentFundsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -45,6 +49,12 @@ extension InvestmentFundsViewController: UICollectionViewDelegate, UICollectionV
 		if let fund = funds?[indexPath.row] { cell.config(fund: fund) }
 		return cell
 	}
+	
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		if let fund = funds?[indexPath.row] {
+			goToFundDetails(fund)
+		}
+	}
 }
 
 extension InvestmentFundsViewController: UICollectionViewDelegateFlowLayout {
@@ -58,8 +68,7 @@ extension InvestmentFundsViewController: UICollectionViewDelegateFlowLayout {
 	}
 }
 
-// MARK: Extension to scroll
-// To Reload page when user scrollup
+// MARK: Extensão para recarregar os dados quando houver um scroll up
 extension InvestmentFundsViewController: UIScrollViewDelegate {
 	func scrollViewDidScroll(_ scrollView: UIScrollView) {
 		let verticalContenteOffset = scrollView.contentOffset.y
