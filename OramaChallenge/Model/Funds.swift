@@ -8,11 +8,11 @@
 import Foundation
 
 struct Fund: Codable {
-	let simpleName, fullName, initialDate: String
-	let strategyVideo: StrategyVideo
-	let fundManager: FundManager
-	let operability: Operability
-	let specification: Specification
+	let simpleName, fullName, initialDate: String?
+	let strategyVideo: StrategyVideo?
+	let fundManager: FundManager?
+	let operability: Operability?
+	let specification: Specification?
 
 	enum CodingKeys: String, CodingKey {
 		case simpleName = "simple_name"
@@ -25,7 +25,7 @@ struct Fund: Codable {
 }
 
 struct FundManager: Codable {
-	let fundManagerDescription: String
+	let fundManagerDescription: String?
 
 	enum CodingKeys: String, CodingKey {
 		case fundManagerDescription = "description"
@@ -33,7 +33,7 @@ struct FundManager: Codable {
 }
 
 struct Operability: Codable {
-	let minimumInitialApplicationAmount: String
+	let minimumInitialApplicationAmount: String?
 
 	enum CodingKeys: String, CodingKey {
 		case minimumInitialApplicationAmount = "minimum_initial_application_amount"
@@ -41,7 +41,7 @@ struct Operability: Codable {
 }
 
 struct Specification: Codable {
-	let fundRiskProfile: FundRiskProfile
+	let fundRiskProfile: FundRiskProfile?
 
 	enum CodingKeys: String, CodingKey {
 		case fundRiskProfile = "fund_risk_profile"
@@ -49,11 +49,11 @@ struct Specification: Codable {
 }
 
 struct FundRiskProfile: Codable {
-	let name: String
+	let name: String?
 }
 
 struct StrategyVideo: Codable {
-	let thumbnail: String
+	let thumbnail: String?
 }
 
 typealias Funds = [Fund]
