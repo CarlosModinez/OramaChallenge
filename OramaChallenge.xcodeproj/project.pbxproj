@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		63D78E9E2717A9D700819D68 /* InvestmentFundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78E9D2717A9D700819D68 /* InvestmentFundsViewController.swift */; };
+		63D78ED22717AE2100819D68 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78ED12717AE2100819D68 /* Requests.swift */; };
+		63D78ED72717AE3500819D68 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78ED62717AE3500819D68 /* RequestError.swift */; };
+		63D78EDC2717AE4700819D68 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78EDB2717AE4700819D68 /* NetworkMonitor.swift */; };
 		63D78EE12717B64700819D68 /* Funds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78EE02717B64700819D68 /* Funds.swift */; };
 		63E5A6412717A52F00FBB90D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A6402717A52F00FBB90D /* AppDelegate.swift */; };
 		63E5A6432717A52F00FBB90D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A6422717A52F00FBB90D /* SceneDelegate.swift */; };
@@ -36,6 +39,9 @@
 
 /* Begin PBXFileReference section */
 		63D78E9D2717A9D700819D68 /* InvestmentFundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentFundsViewController.swift; sourceTree = "<group>"; };
+		63D78ED12717AE2100819D68 /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		63D78ED62717AE3500819D68 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		63D78EDB2717AE4700819D68 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		63D78EE02717B64700819D68 /* Funds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funds.swift; sourceTree = "<group>"; };
 		63E5A63D2717A52F00FBB90D /* OramaChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OramaChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E5A6402717A52F00FBB90D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +96,9 @@
 		6338FE932717A7640002F68E /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				63D78ED12717AE2100819D68 /* Requests.swift */,
+				63D78ED62717AE3500819D68 /* RequestError.swift */,
+				63D78EDB2717AE4700819D68 /* NetworkMonitor.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -97,6 +106,7 @@
 		6338FE942717A78C0002F68E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63D78EE02717B64700819D68 /* Funds.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,8 +323,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D78EE12717B64700819D68 /* Funds.swift in Sources */,
+				63D78ED72717AE3500819D68 /* RequestError.swift in Sources */,
+				63D78EDC2717AE4700819D68 /* NetworkMonitor.swift in Sources */,
 				63E5A6412717A52F00FBB90D /* AppDelegate.swift in Sources */,
 				63D78E9E2717A9D700819D68 /* InvestmentFundsViewController.swift in Sources */,
+				63D78ED22717AE2100819D68 /* Requests.swift in Sources */,
 				63E5A6432717A52F00FBB90D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
