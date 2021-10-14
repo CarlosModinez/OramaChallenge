@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		631F93C52718C62200C0FA36 /* TitleAndValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F93C42718C62200C0FA36 /* TitleAndValueView.swift */; };
 		631F93CD2718C9AE00C0FA36 /* FundDescriptionWithDecorationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F93CC2718C9AE00C0FA36 /* FundDescriptionWithDecorationView.swift */; };
+		631F93D52718DE0A00C0FA36 /* Strings+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F93D42718DE0A00C0FA36 /* Strings+Helpers.swift */; };
 		632DAACA27188472002D33E9 /* GradientOfRiskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632DAAC927188472002D33E9 /* GradientOfRiskView.swift */; };
 		632DAACF27188D44002D33E9 /* FundRisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632DAACE27188D44002D33E9 /* FundRisk.swift */; };
 		632DAAD427189CA8002D33E9 /* UIColors+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632DAAD327189CA8002D33E9 /* UIColors+Helpers.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		631F93C42718C62200C0FA36 /* TitleAndValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndValueView.swift; sourceTree = "<group>"; };
 		631F93CC2718C9AE00C0FA36 /* FundDescriptionWithDecorationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundDescriptionWithDecorationView.swift; sourceTree = "<group>"; };
+		631F93D42718DE0A00C0FA36 /* Strings+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Helpers.swift"; sourceTree = "<group>"; };
 		632DAAC927188472002D33E9 /* GradientOfRiskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientOfRiskView.swift; sourceTree = "<group>"; };
 		632DAACE27188D44002D33E9 /* FundRisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundRisk.swift; sourceTree = "<group>"; };
 		632DAAD327189CA8002D33E9 /* UIColors+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColors+Helpers.swift"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				63D78EFB2717CAFB00819D68 /* UIView+Anchor.swift */,
 				632DAAD327189CA8002D33E9 /* UIColors+Helpers.swift */,
 				632DAAD927189F1C002D33E9 /* UIFont+Helpers.swift */,
+				631F93D42718DE0A00C0FA36 /* Strings+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				63D78F012717D4E000819D68 /* InvestmentFundsView.swift in Sources */,
 				63D78F0A2717D50800819D68 /* SingleFundCollectionViewCell.swift in Sources */,
 				63D78ED22717AE2100819D68 /* ApiRequests.swift in Sources */,
+				631F93D52718DE0A00C0FA36 /* Strings+Helpers.swift in Sources */,
 				63D78ECD2717ADDB00819D68 /* FundDatailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

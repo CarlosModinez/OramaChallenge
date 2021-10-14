@@ -82,14 +82,14 @@ class FundDatailsView: UIView {
 			fundDescriptionView.setColor(FundRisk.mapRisk(fundRisk: String(risk)).getColor())
 		}
 		
-		if let initialDate = fund.initialDate {
+		if var initialDate = fund.initialDate {
 			initialDateView.title.text = "Data de criação do fundo"
-			initialDateView.value.text = initialDate
+			initialDateView.value.text = initialDate.toDate()
 		}
 		
-		if let minimumValue = fund.operability?.minimumInitialApplicationAmount {
+		if var minimumValue = fund.operability?.minimumInitialApplicationAmount {
 			minimumAplicationView.title.text = "Valor mínimo de aplicação"
-			minimumAplicationView.value.text = minimumValue
+			minimumAplicationView.value.text = minimumValue.toCurrency()
 		}
 		
 		addSubview(contentView)
