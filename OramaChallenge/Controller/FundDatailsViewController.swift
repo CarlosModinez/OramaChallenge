@@ -9,6 +9,9 @@ import UIKit
 
 class FundDatailsViewController: OramaDefaultViewController {
 	private var fund: Fund!
+	private lazy var detailView: FundDatailsView = {
+		return self.view as! FundDatailsView
+	}()
 	
 	init(fundToShow fund: Fund) {
 		super.init(nibName: nil, bundle: nil)
@@ -19,11 +22,26 @@ class FundDatailsViewController: OramaDefaultViewController {
 		fatalError("init(coder:) has not been implemented")
 	}
 	
-	override func viewWillAppear(_ animated: Bool) {
-		super.viewWillAppear(animated)
-	}
-	
 	override func viewDidLoad() {
         super.viewDidLoad()
-    }
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		setupNavigationBar()
+	}
+	
+	override func loadView() {
+		self.view = FundDatailsView(frame: UIScreen.main.bounds, fund: fund)
+	}
+	
+	private func setupNavigationBar() {
+		self.navigationItem.title = "Detalhes sobre o fundo"
+		self.navigationController?.navigationBar.tintColor = UIColor.gray;
+		
+		let backButton = UIBarButtonItem()
+		backButton.title = ""
+		
+		self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+	}
 }

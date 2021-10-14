@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		631F93C52718C62200C0FA36 /* TitleAndValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F93C42718C62200C0FA36 /* TitleAndValueView.swift */; };
+		631F93CD2718C9AE00C0FA36 /* FundDescriptionWithDecorationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F93CC2718C9AE00C0FA36 /* FundDescriptionWithDecorationView.swift */; };
 		632DAACA27188472002D33E9 /* GradientOfRiskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632DAAC927188472002D33E9 /* GradientOfRiskView.swift */; };
 		632DAACF27188D44002D33E9 /* FundRisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632DAACE27188D44002D33E9 /* FundRisk.swift */; };
 		632DAAD427189CA8002D33E9 /* UIColors+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632DAAD327189CA8002D33E9 /* UIColors+Helpers.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		631F93C42718C62200C0FA36 /* TitleAndValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndValueView.swift; sourceTree = "<group>"; };
+		631F93CC2718C9AE00C0FA36 /* FundDescriptionWithDecorationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundDescriptionWithDecorationView.swift; sourceTree = "<group>"; };
 		632DAAC927188472002D33E9 /* GradientOfRiskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientOfRiskView.swift; sourceTree = "<group>"; };
 		632DAACE27188D44002D33E9 /* FundRisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundRisk.swift; sourceTree = "<group>"; };
 		632DAAD327189CA8002D33E9 /* UIColors+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColors+Helpers.swift"; sourceTree = "<group>"; };
@@ -185,8 +189,10 @@
 		63D78F052717D4E700819D68 /* AssistantsViews */ = {
 			isa = PBXGroup;
 			children = (
+				631F93C42718C62200C0FA36 /* TitleAndValueView.swift */,
 				63D78F092717D50800819D68 /* SingleFundCollectionViewCell.swift */,
 				632DAAC927188472002D33E9 /* GradientOfRiskView.swift */,
+				631F93CC2718C9AE00C0FA36 /* FundDescriptionWithDecorationView.swift */,
 			);
 			path = AssistantsViews;
 			sourceTree = "<group>";
@@ -380,7 +386,9 @@
 				63D78EF12717BE5C00819D68 /* Funds.swift in Sources */,
 				632DAAD427189CA8002D33E9 /* UIColors+Helpers.swift in Sources */,
 				63D78EC52717ADA400819D68 /* OramaDefaultViewController.swift in Sources */,
+				631F93CD2718C9AE00C0FA36 /* FundDescriptionWithDecorationView.swift in Sources */,
 				632DAACA27188472002D33E9 /* GradientOfRiskView.swift in Sources */,
+				631F93C52718C62200C0FA36 /* TitleAndValueView.swift in Sources */,
 				632DAACF27188D44002D33E9 /* FundRisk.swift in Sources */,
 				632DAADA27189F1C002D33E9 /* UIFont+Helpers.swift in Sources */,
 				632DAADF2718A855002D33E9 /* FundDatailsView.swift in Sources */,
