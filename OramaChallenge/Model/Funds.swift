@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Funds: Codable {
+struct Fund: Codable {
 	let simpleName, fullName, initialDate: String
 	let strategyVideo: StrategyVideo
 	let fundManager: FundManager
@@ -55,3 +55,5 @@ struct FundRiskProfile: Codable {
 struct StrategyVideo: Codable {
 	let thumbnail: String
 }
+
+typealias Funds = [Fund]

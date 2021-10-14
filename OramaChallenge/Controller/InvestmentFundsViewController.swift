@@ -7,9 +7,15 @@
 
 import UIKit
 
-class InvestmentFundsViewController: UIViewController {
+class InvestmentFundsViewController: OramaDefaultViewController {
+	private let viewModel = InvestimentFundsViewModel()
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		view.backgroundColor = .cyan
+		viewModel.getFunds { response in
+			switch response {
+			case .success(let funds)
+			}
+		}
 	}
 }
