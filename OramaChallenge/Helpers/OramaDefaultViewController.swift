@@ -15,7 +15,7 @@ class OramaDefaultViewController: UIViewController {
 		return view
 	}()
 	private lazy var loadingView: UIView = {
-		let loadIndicator = UIActivityIndicatorView(style: .large)
+		let loadIndicator = UIActivityIndicatorView()
 		let loadView = UIView()
 		
 		loadView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
