@@ -9,7 +9,9 @@ import UIKit
 
 class InvestmentFundsViewController: OramaDefaultViewController {
 	private let viewModel = InvestmentFundsViewModel()
-	private var fundsView: InvestmentFundsView { return self.view as! InvestmentFundsView }
+	private lazy var fundsView: InvestmentFundsView = {
+		return self.view as! InvestmentFundsView
+	}()
 	
 	private var funds: Funds?
 	
@@ -20,6 +22,7 @@ class InvestmentFundsViewController: OramaDefaultViewController {
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(true)
+		self.navigationItem.title = "Fundos disponíveis"
 	}
 	
 	override func loadView() {
@@ -55,6 +58,15 @@ extension InvestmentFundsViewController: UICollectionViewDelegateFlowLayout {
 	}
 }
 
+// MARK: Extension to scroll
+// To Reload page when user scrollup
+extension InvestmentFundsViewController: UIScrollViewDelegate {
+	func scrollViewDidScroll(_ scrollView: UIScrollView) {
+		let verticalContenteOffset = scrollView.contentOffset.y
+		let minScrollPositionToReload: CGFloat = -100.0
+		if verticalContenteOffset < minScrollPositionToReload { getFunds() }
+	}
+}
 
 // MARK: Requisição dos fundos
 extension InvestmentFundsViewController {
@@ -68,7 +80,9 @@ extension InvestmentFundsViewController {
 				self.funds = Array(value[0..<6])
 				
 			case .failure(let error):
-				self.handlerError(error)
+				self.handlerError(error) {
+					self.getFunds()
+				}
 			}
 			
 			self.fundsView.reloadCollectionData()
