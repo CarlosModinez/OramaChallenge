@@ -14,8 +14,9 @@ class OramaDefaultViewController: UIViewController {
 		
 		return view
 	}()
+	
 	private lazy var loadingView: UIView = {
-		let loadIndicator = UIActivityIndicatorView(style: .large)
+		let loadIndicator = UIActivityIndicatorView()
 		let loadView = UIView()
 		
 		loadView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
@@ -40,21 +41,31 @@ class OramaDefaultViewController: UIViewController {
 	override func loadView() {
 		self.view = mainView
 	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		debugPrint("\(String(describing: self))")
+	}
 }
 
 
 // MARK: Tratamento de exceções
 extension OramaDefaultViewController {
 	func handlerError(_ error: RequestError, onTap: (() -> Void)? = nil) {
+		let title: String
 		let description: String
 		
 		switch error {
-		case .decodingError, .responseError, .invalidUrl: description = "Erro genérico"
-		case .noInternetConnection: description = "Falta de internet"
+		case .decodingError, .responseError, .invalidUrl:
+			title = AppStrings.shared.generalApiErrorTitle
+			description = AppStrings.shared.generalApiErrorDescription
+		case .noInternetConnection:
+			title = AppStrings.shared.internetConnectionFailedTitle
+			description = AppStrings.shared.internetConnectionFailedDescription
 		}
 		
 		let alertController = UIAlertController(
-			title: NSLocalizedString("Aconteceu um erro", comment:""),
+			title: NSLocalizedString(title, comment:""),
 			message: NSLocalizedString(description, comment:""),
 			preferredStyle: .alert)
 		
@@ -72,10 +83,10 @@ extension OramaDefaultViewController {
 		DispatchQueue.main.async {
 			self.view.addSubview(self.loadingView)
 			self.loadingView.anchor(
-				centerX: (self.view.centerXAnchor, 0),
-				centerY: (self.view.centerYAnchor, 0),
-				height: 150,
-				width: 200
+				top: (self.view.topAnchor, 0),
+				right: (self.view.rightAnchor, 0),
+				left: (self.view.leftAnchor, 0),
+				bottom: (self.view.bottomAnchor, 0)
 			)
 		}
 	}

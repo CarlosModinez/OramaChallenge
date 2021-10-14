@@ -9,7 +9,9 @@ import UIKit
 
 class InvestmentFundsViewController: OramaDefaultViewController {
 	private let viewModel = InvestmentFundsViewModel()
-	private var fundsView: InvestmentFundsView { return self.view as! InvestmentFundsView }
+	private lazy var fundsView: InvestmentFundsView = {
+		return self.view as! InvestmentFundsView
+	}()
 	
 	private var funds: Funds?
 	
@@ -20,12 +22,17 @@ class InvestmentFundsViewController: OramaDefaultViewController {
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(true)
+		self.navigationItem.title = AppStrings.shared.fundsPageTitle
 	}
 	
 	override func loadView() {
 		self.view = InvestmentFundsView(frame: UIScreen.main.bounds)
 		fundsView.collectionViewDataSource = self
 		fundsView.collectionViewDelegate = self
+	}
+	
+	private func goToFundDetails(_ fund: Fund) {
+		self.navigationController?.pushViewController(FundDatailsViewController(fundToShow: fund), animated: true)
 	}
 }
 
@@ -42,6 +49,12 @@ extension InvestmentFundsViewController: UICollectionViewDelegate, UICollectionV
 		if let fund = funds?[indexPath.row] { cell.config(fund: fund) }
 		return cell
 	}
+	
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		if let fund = funds?[indexPath.row] {
+			goToFundDetails(fund)
+		}
+	}
 }
 
 extension InvestmentFundsViewController: UICollectionViewDelegateFlowLayout {
@@ -55,6 +68,14 @@ extension InvestmentFundsViewController: UICollectionViewDelegateFlowLayout {
 	}
 }
 
+// MARK: Extensão para recarregar os dados quando houver um scroll up
+extension InvestmentFundsViewController: UIScrollViewDelegate {
+	func scrollViewDidScroll(_ scrollView: UIScrollView) {
+		let verticalContenteOffset = scrollView.contentOffset.y
+		let minScrollPositionToReload: CGFloat = -100.0
+		if verticalContenteOffset < minScrollPositionToReload { getFunds() }
+	}
+}
 
 // MARK: Requisição dos fundos
 extension InvestmentFundsViewController {
@@ -68,7 +89,9 @@ extension InvestmentFundsViewController {
 				self.funds = Array(value[0..<6])
 				
 			case .failure(let error):
-				self.handlerError(error)
+				self.handlerError(error) {
+					self.getFunds()
+				}
 			}
 			
 			self.fundsView.reloadCollectionData()

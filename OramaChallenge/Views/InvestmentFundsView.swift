@@ -8,9 +8,14 @@
 import UIKit
 
 class InvestmentFundsView: UIView {
+	private let headerInformation = GradientOfRiskView()
+	
 	private lazy var collectionView: UICollectionView = {
-		let collection = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-		collection.backgroundColor = .white
+		let layout = UICollectionViewFlowLayout()
+		layout.scrollDirection = .vertical
+		let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
+		
+		collection.backgroundColor = .backgroundWhite()
 		return collection
 	}()
 	
@@ -36,8 +41,13 @@ class InvestmentFundsView: UIView {
 	}
 	
 	private func setupUI() {
+		self.backgroundColor = .backgroundGray()
+
+		addSubview(headerInformation)
 		addSubview(collectionView)
-		backgroundColor = .cyan
+		collectionView.backgroundColor = .backgroundGray()
+		
+		
 		collectionView.register(
 			SingleFundCollectionViewCell.self,
 			forCellWithReuseIdentifier: SingleFundCollectionViewCell.identifier
@@ -46,11 +56,18 @@ class InvestmentFundsView: UIView {
 	}
 	
 	private func setupConstraints() {
-		collectionView.anchor(
-			top: (topAnchor, 0),
+		headerInformation.anchor(
+			top: (safeAreaLayoutGuide.topAnchor, 0),
 			right: (rightAnchor, 0),
 			left: (leftAnchor, 0),
-			bottom: (bottomAnchor, 0)
+			height: 100
+		)
+		
+		collectionView.anchor(
+			top: (headerInformation.bottomAnchor, 0),
+			right: (rightAnchor, 0),
+			left: (leftAnchor, 0),
+			bottom: (safeAreaLayoutGuide.bottomAnchor, 0)
 		)
 	}
 	
