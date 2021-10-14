@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63D78E9E2717A9D700819D68 /* InvestmentFundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78E9D2717A9D700819D68 /* InvestmentFundsViewController.swift */; };
 		63E5A6412717A52F00FBB90D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A6402717A52F00FBB90D /* AppDelegate.swift */; };
 		63E5A6432717A52F00FBB90D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A6422717A52F00FBB90D /* SceneDelegate.swift */; };
-		63E5A6452717A52F00FBB90D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A6442717A52F00FBB90D /* ViewController.swift */; };
-		63E5A6482717A52F00FBB90D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E5A6462717A52F00FBB90D /* Main.storyboard */; };
-		63E5A64B2717A52F00FBB90D /* OramaChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A6492717A52F00FBB90D /* OramaChallenge.xcdatamodeld */; };
 		63E5A64D2717A53000FBB90D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E5A64C2717A53000FBB90D /* Assets.xcassets */; };
 		63E5A6502717A53000FBB90D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E5A64E2717A53000FBB90D /* LaunchScreen.storyboard */; };
 		63E5A65B2717A53000FBB90D /* OramaChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A65A2717A53000FBB90D /* OramaChallengeTests.swift */; };
@@ -36,12 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63D78E9D2717A9D700819D68 /* InvestmentFundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentFundsViewController.swift; sourceTree = "<group>"; };
 		63E5A63D2717A52F00FBB90D /* OramaChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OramaChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E5A6402717A52F00FBB90D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E5A6422717A52F00FBB90D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63E5A6442717A52F00FBB90D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		63E5A6472717A52F00FBB90D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		63E5A64A2717A52F00FBB90D /* OramaChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OramaChallenge.xcdatamodel; sourceTree = "<group>"; };
 		63E5A64C2717A53000FBB90D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63E5A64F2717A53000FBB90D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63E5A6512717A53000FBB90D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +74,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6338FE922717A74F0002F68E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				63E5A6512717A53000FBB90D /* Info.plist */,
+				63E5A6402717A52F00FBB90D /* AppDelegate.swift */,
+				63E5A6422717A52F00FBB90D /* SceneDelegate.swift */,
+				63E5A64E2717A53000FBB90D /* LaunchScreen.storyboard */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6338FE932717A7640002F68E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		6338FE942717A78C0002F68E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6338FE962717A7A40002F68E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6338FE972717A7BE0002F68E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6338FE982717A7C40002F68E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63D78E9D2717A9D700819D68 /* InvestmentFundsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6338FE9A2717A81D0002F68E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				63E5A64C2717A53000FBB90D /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		63E5A6342717A52F00FBB90D = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +152,13 @@
 		63E5A63F2717A52F00FBB90D /* OramaChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				63E5A6402717A52F00FBB90D /* AppDelegate.swift */,
-				63E5A6422717A52F00FBB90D /* SceneDelegate.swift */,
-				63E5A6442717A52F00FBB90D /* ViewController.swift */,
-				63E5A6462717A52F00FBB90D /* Main.storyboard */,
-				63E5A64C2717A53000FBB90D /* Assets.xcassets */,
-				63E5A64E2717A53000FBB90D /* LaunchScreen.storyboard */,
-				63E5A6512717A53000FBB90D /* Info.plist */,
-				63E5A6492717A52F00FBB90D /* OramaChallenge.xcdatamodeld */,
+				6338FE9A2717A81D0002F68E /* Assets */,
+				6338FE922717A74F0002F68E /* Config */,
+				6338FE932717A7640002F68E /* Repository */,
+				6338FE942717A78C0002F68E /* Model */,
+				6338FE962717A7A40002F68E /* ViewModel */,
+				6338FE982717A7C40002F68E /* Controller */,
+				6338FE972717A7BE0002F68E /* Views */,
 			);
 			path = OramaChallenge;
 			sourceTree = "<group>";
@@ -236,7 +286,6 @@
 			files = (
 				63E5A6502717A53000FBB90D /* LaunchScreen.storyboard in Resources */,
 				63E5A64D2717A53000FBB90D /* Assets.xcassets in Resources */,
-				63E5A6482717A52F00FBB90D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E5A6452717A52F00FBB90D /* ViewController.swift in Sources */,
 				63E5A6412717A52F00FBB90D /* AppDelegate.swift in Sources */,
-				63E5A64B2717A52F00FBB90D /* OramaChallenge.xcdatamodeld in Sources */,
+				63D78E9E2717A9D700819D68 /* InvestmentFundsViewController.swift in Sources */,
 				63E5A6432717A52F00FBB90D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,14 +348,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		63E5A6462717A52F00FBB90D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63E5A6472717A52F00FBB90D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		63E5A64E2717A53000FBB90D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +482,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4AUTGNZMRU;
-				INFOPLIST_FILE = OramaChallenge/Info.plist;
+				INFOPLIST_FILE = OramaChallenge/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +501,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4AUTGNZMRU;
-				INFOPLIST_FILE = OramaChallenge/Info.plist;
+				INFOPLIST_FILE = OramaChallenge/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -597,19 +637,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		63E5A6492717A52F00FBB90D /* OramaChallenge.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				63E5A64A2717A52F00FBB90D /* OramaChallenge.xcdatamodel */,
-			);
-			currentVersion = 63E5A64A2717A52F00FBB90D /* OramaChallenge.xcdatamodel */;
-			path = OramaChallenge.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 63E5A6352717A52F00FBB90D /* Project object */;
 }
