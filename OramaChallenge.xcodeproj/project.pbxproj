@@ -13,8 +13,11 @@
 		63D78ED22717AE2100819D68 /* ApiRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78ED12717AE2100819D68 /* ApiRequests.swift */; };
 		63D78ED72717AE3500819D68 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78ED62717AE3500819D68 /* RequestError.swift */; };
 		63D78EDC2717AE4700819D68 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78EDB2717AE4700819D68 /* NetworkMonitor.swift */; };
-		63D78EE62717B7FD00819D68 /* InvestimentFundsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78EE52717B7FD00819D68 /* InvestimentFundsViewModel.swift */; };
+		63D78EE62717B7FD00819D68 /* InvestmentFundsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78EE52717B7FD00819D68 /* InvestmentFundsViewModel.swift */; };
 		63D78EF12717BE5C00819D68 /* Funds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78EF02717BE5C00819D68 /* Funds.swift */; };
+		63D78EFC2717CAFB00819D68 /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78EFB2717CAFB00819D68 /* UIView+Anchor.swift */; };
+		63D78F012717D4E000819D68 /* InvestmentFundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78F002717D4E000819D68 /* InvestmentFundsView.swift */; };
+		63D78F0A2717D50800819D68 /* SingleFundCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78F092717D50800819D68 /* SingleFundCollectionViewCell.swift */; };
 		63E5A6412717A52F00FBB90D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A6402717A52F00FBB90D /* AppDelegate.swift */; };
 		63E5A6432717A52F00FBB90D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A6422717A52F00FBB90D /* SceneDelegate.swift */; };
 		63E5A64D2717A53000FBB90D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E5A64C2717A53000FBB90D /* Assets.xcassets */; };
@@ -47,8 +50,11 @@
 		63D78ED12717AE2100819D68 /* ApiRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequests.swift; sourceTree = "<group>"; };
 		63D78ED62717AE3500819D68 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		63D78EDB2717AE4700819D68 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
-		63D78EE52717B7FD00819D68 /* InvestimentFundsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestimentFundsViewModel.swift; sourceTree = "<group>"; };
+		63D78EE52717B7FD00819D68 /* InvestmentFundsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentFundsViewModel.swift; sourceTree = "<group>"; };
 		63D78EF02717BE5C00819D68 /* Funds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Funds.swift; sourceTree = "<group>"; };
+		63D78EFB2717CAFB00819D68 /* UIView+Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchor.swift"; sourceTree = "<group>"; };
+		63D78F002717D4E000819D68 /* InvestmentFundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentFundsView.swift; sourceTree = "<group>"; };
+		63D78F092717D50800819D68 /* SingleFundCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFundCollectionViewCell.swift; sourceTree = "<group>"; };
 		63E5A63D2717A52F00FBB90D /* OramaChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OramaChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E5A6402717A52F00FBB90D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E5A6422717A52F00FBB90D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,7 +126,7 @@
 		6338FE962717A7A40002F68E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				63D78EE52717B7FD00819D68 /* InvestimentFundsViewModel.swift */,
+				63D78EE52717B7FD00819D68 /* InvestmentFundsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -128,6 +134,8 @@
 		6338FE972717A7BE0002F68E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				63D78F052717D4E700819D68 /* AssistantsViews */,
+				63D78F002717D4E000819D68 /* InvestmentFundsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,8 +161,17 @@
 			isa = PBXGroup;
 			children = (
 				63D78EC42717ADA400819D68 /* OramaDefaultViewController.swift */,
+				63D78EFB2717CAFB00819D68 /* UIView+Anchor.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		63D78F052717D4E700819D68 /* AssistantsViews */ = {
+			isa = PBXGroup;
+			children = (
+				63D78F092717D50800819D68 /* SingleFundCollectionViewCell.swift */,
+			);
+			path = AssistantsViews;
 			sourceTree = "<group>";
 		};
 		63E5A6342717A52F00FBB90D = {
@@ -339,13 +356,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D78EFC2717CAFB00819D68 /* UIView+Anchor.swift in Sources */,
 				63D78ED72717AE3500819D68 /* RequestError.swift in Sources */,
 				63D78EDC2717AE4700819D68 /* NetworkMonitor.swift in Sources */,
 				63E5A6412717A52F00FBB90D /* AppDelegate.swift in Sources */,
 				63D78E9E2717A9D700819D68 /* InvestmentFundsViewController.swift in Sources */,
 				63D78EF12717BE5C00819D68 /* Funds.swift in Sources */,
 				63D78EC52717ADA400819D68 /* OramaDefaultViewController.swift in Sources */,
-				63D78EE62717B7FD00819D68 /* InvestimentFundsViewModel.swift in Sources */,
+				63D78EE62717B7FD00819D68 /* InvestmentFundsViewModel.swift in Sources */,
+				63D78F012717D4E000819D68 /* InvestmentFundsView.swift in Sources */,
+				63D78F0A2717D50800819D68 /* SingleFundCollectionViewCell.swift in Sources */,
 				63D78ED22717AE2100819D68 /* ApiRequests.swift in Sources */,
 				63E5A6432717A52F00FBB90D /* SceneDelegate.swift in Sources */,
 				63D78ECD2717ADDB00819D68 /* FundDatailsViewController.swift in Sources */,

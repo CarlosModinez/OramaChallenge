@@ -8,14 +8,70 @@
 import UIKit
 
 class InvestmentFundsViewController: OramaDefaultViewController {
-	private let viewModel = InvestimentFundsViewModel()
+	private let viewModel = InvestmentFundsViewModel()
+	private var fundsView: InvestmentFundsView { return self.view as! InvestmentFundsView }
+	
+	private var funds: Funds?
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		viewModel.getFunds { response in
-			switch response {
-			case .success(let funds)
+		self.getFunds()
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(true)
+	}
+	
+	override func loadView() {
+		self.view = InvestmentFundsView(frame: UIScreen.main.bounds)
+		fundsView.collectionViewDataSource = self
+		fundsView.collectionViewDelegate = self
+	}
+}
+
+extension InvestmentFundsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+		return self.funds?.count ?? 0
+	}
+	
+	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SingleFundCollectionViewCell.identifier, for: indexPath) as? SingleFundCollectionViewCell else {
+			return UICollectionViewCell()
+		}
+		
+		if let fund = funds?[indexPath.row] { cell.config(fund: fund) }
+		return cell
+	}
+}
+
+extension InvestmentFundsViewController: UICollectionViewDelegateFlowLayout {
+	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+		let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
+		let totalSpace = flowLayout.sectionInset.left + flowLayout.sectionInset.right
+		let size = Double(collectionView.bounds.width - totalSpace)
+		
+		return CGSize(width: size, height: size * 0.3)
+	}
+}
+
+
+// MARK: Requisição dos fundos
+extension InvestmentFundsViewController {
+	private func getFunds() {
+		self.showLoading()
+		viewModel.getFunds { [weak self] result in
+			guard let self = self else { return }
+			self.hideLoading()
+			switch result {
+			case .success(let value):
+				self.funds = Array(value[0..<6])
+				
+			case .failure(let error):
+				self.handlerError(error)
 			}
+			
+			self.fundsView.reloadCollectionData()
 		}
 	}
 }
