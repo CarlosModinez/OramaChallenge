@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		63D78E9E2717A9D700819D68 /* InvestmentFundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78E9D2717A9D700819D68 /* InvestmentFundsViewController.swift */; };
+		63D78EE12717B64700819D68 /* Funds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D78EE02717B64700819D68 /* Funds.swift */; };
 		63E5A6412717A52F00FBB90D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A6402717A52F00FBB90D /* AppDelegate.swift */; };
 		63E5A6432717A52F00FBB90D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E5A6422717A52F00FBB90D /* SceneDelegate.swift */; };
 		63E5A64D2717A53000FBB90D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E5A64C2717A53000FBB90D /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		63D78E9D2717A9D700819D68 /* InvestmentFundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentFundsViewController.swift; sourceTree = "<group>"; };
+		63D78EE02717B64700819D68 /* Funds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funds.swift; sourceTree = "<group>"; };
 		63E5A63D2717A52F00FBB90D /* OramaChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OramaChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E5A6402717A52F00FBB90D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E5A6422717A52F00FBB90D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D78EE12717B64700819D68 /* Funds.swift in Sources */,
 				63E5A6412717A52F00FBB90D /* AppDelegate.swift in Sources */,
 				63D78E9E2717A9D700819D68 /* InvestmentFundsViewController.swift in Sources */,
 				63E5A6432717A52F00FBB90D /* SceneDelegate.swift in Sources */,
