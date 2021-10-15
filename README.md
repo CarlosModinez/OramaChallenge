@@ -32,4 +32,4 @@ Na tela de detalhe, são exibidos
   
 * Os requisitos do projeto descrevem que devem ser mostradas apenas os 6 primeiros fundos da resposta da requisição, no entanto, na maioria dos meus testes, os 5 primeiros vêm com o parâmetro strategy_video.thumbnail nulo. Portanto, não é possível visualizar a thumbnail na tela de detalhes nesses casos. Não desista, há fundos que vem com a resposta do thumbail preenchida.
   
-* Pelo mesmo motivo citado à cima, a indição de risco dos fundos sempre aparenta ser muito alta. Para verificar o funcionamento da indicação de risco, experimente alterar o código para mostrar mais fundo a fim de mostrar alguns com baixo risco.
+* Pelo mesmo motivo citado à cima, a indição de risco dos fundos sempre aparenta ser muito alta. Para verificar o funcionamento da indicação de risco, experimente alterar o código para mostrar mais fundos a fim de mostrar alguns com baixo risco.
